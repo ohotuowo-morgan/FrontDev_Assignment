@@ -134,3 +134,12 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById("toggleSidebar");
+    const controls = document.getElementById("controls");
+
+    toggleBtn.addEventListener("click", () => {
+        controls.classList.toggle("open");
+    });
+});
